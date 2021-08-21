@@ -14,7 +14,7 @@ jobs/**
 !jobs/**/
 
 #uncomment the following line to save next build numbers with config
-#!jobs/**/nextBuildNumber
+!jobs/**/nextBuildNumber
 
 #exclude only config.xml files in repository subdirectories
 !config.xml
@@ -23,3 +23,10 @@ jobs/**
 jobs/**/*workspace
 
 #as a result only settings and job config.xml files in JENKINS_HOME will be tracked by git
+!/.vscode
+
+!/docker
+!/jcasc
+!/jobdsl
+!/win
+/win/jenkins.war*

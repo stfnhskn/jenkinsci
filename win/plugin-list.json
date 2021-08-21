@@ -1,0 +1,13 @@
+{
+    "pluginUrl": [
+        "https://updates.jenkins.io/download/plugins/snakeyaml-api/1.27.0/snakeyaml-api.hpi",
+        "https://updates.jenkins.io/download/plugins/configuration-as-code/1.47/configuration-as-code.hpi",
+        "https://updates.jenkins.io/download/plugins/variant/1.4/variant.hpi",
+        "https://updates.jenkins.io/download/plugins/jackson2-api/2.12.1/jackson2-api.hpi",
+        "https://updates.jenkins.io/download/plugins/metrics/4.0.2.7/metrics.hpi",
+        "https://updates.jenkins.io/download/plugins/trilead-api/1.0.13/trilead-api.hpi",
+        "https://updates.jenkins.io/download/plugins/script-security/1.76/script-security.hpi",
+        "https://updates.jenkins.io/download/plugins/structs/1.22/structs.hpi",
+        "https://updates.jenkins.io/download/plugins/job-dsl/1.77/job-dsl.hpi"
+    ]
+}
