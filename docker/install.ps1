@@ -1,7 +1,7 @@
 
 
-& docker.exe network create jenkins | Out-Host
-# & docker.exe network ls --format '{{json . }}' | jq .
+& docker network create jenkins | Out-Host
+# & docker  network ls --format '{{json . }}' | jq .
 
 $arguments = @(
     'run',
@@ -16,9 +16,9 @@ $arguments = @(
     '--volume','jenkins-data:/var/jenkins_home',
     'docker:dind'
 )
-& docker.exe $arguments
+& docker $arguments
 
-& docker.exe build -t myjenkins:1.0 .
+& docker build -t myjenkins:1.0 .
 
 $arguments_jenkins = @(
     'run',
@@ -33,10 +33,10 @@ $arguments_jenkins = @(
     '--volume','jenkins-docker-certs:/certs/client:ro',
     '--publish', '8080:8080',
     '--publish', '50000:50000',
-    'myjenkins:1.0'
+    'myjenkins:1.0.0'
 )
 
-& docker.exe $arguments_jenkins
+& docker $arguments_jenkins
 
 $arguments_gitlab = @(
     'run',
@@ -55,4 +55,4 @@ $arguments_gitlab = @(
     '--publish', '9022:22',
     'gitlab/gitlab-ce:14.1.2-ce.0'
 )
-& docker.exe $arguments_gitlab
+& docker $arguments_gitlab
