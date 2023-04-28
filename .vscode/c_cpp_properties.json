@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/gcc.exe",
+            "cStandard": "gnu99",
+            "cppStandard": "gnu++98",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerArgs": [
+                "-Wall"
+            ]
+        }
+    ],
+    "version": 4
+}

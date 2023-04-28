@@ -1,13 +1,22 @@
 {
     
     "configurations": [
-    {
-        "name": "PowerShell Launch Current File",
-        "type": "PowerShell",
-        "request": "launch",
-        "script": "${file}",
-        "args": ["-installDir .\\jenkins -verbose"],
-        "cwd": "D:\\github.com\\stfnhskn\\jenkinsci"
-    }
+        {
+            "type": "java",
+            "name": "Launch HelloWorld",
+            "request": "launch",
+            "mainClass": "SB1.HelloWorld",
+            "projectName": ""
+        },
+        {
+            "name": "PowerShell Launch Current File",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "args": [
+                "-installDir .\\jenkins -verbose"
+            ],
+            "cwd": "D:\\github.com\\stfnhskn\\jenkinsci"
+        }
     ]
 }
